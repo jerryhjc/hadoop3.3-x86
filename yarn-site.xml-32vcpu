@@ -1,0 +1,63 @@
+<configuration>
+        <property>
+                <name>yarn.resourcemanager.hostname</name>
+                <value>hd1-rhel-32</value>
+        </property>
+        <property>
+                <name>yarn.nodemanager.aux-services</name>
+                <value>mapreduce_shuffle</value>
+        </property>
+
+
+         <property>
+                <name>yarn.scheduler.minimum-allocation-mb</name>
+                <value>1024</value>
+        </property>
+
+        <property>
+                <name>yarn.scheduler.maximum-allocation-mb</name>
+<!--            <value>65536</value>    -->
+                <value>111768</value>
+        </property>
+
+        <property>
+                <name>yarn.scheduler.increment-allocation-mb</name>
+                <value>1024</value>
+        </property>
+
+        <property>
+                <name>yarn.scheduler.minimum-allocation-vcores</name>
+                <value>1</value>
+        </property>
+
+        <property>
+                <name>yarn.scheduler.maximum-allocation-vcores</name>
+                <value>8</value>
+        </property>
+
+        <property>
+                <name>yarn.scheduler.increment-allocation-vcores</name>
+                <value>1</value>
+        </property>
+
+        <property>
+                <name>yarn.nodemanager.resource.memory-mb</name>
+                <value>111672</value>
+        </property>
+
+        <property>
+                <name>yarn.nodemanager.resource.cpu-vcores</name>
+                <value>32</value>
+        </property>
+
+        <property>
+                <name>yarn.nodemanager.local-dirs</name>
+                <!--    <value>${hadoop.tmp.dir}/nm-local-dir</value>   -->
+                <value>/data/1/nm-local-dir,/data/2/nm-local-dir</value>
+        </property>
+
+
+<!-- Site specific YARN configuration properties -->
+
+</configuration>
+
